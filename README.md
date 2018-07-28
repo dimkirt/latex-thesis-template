@@ -50,8 +50,8 @@ When latex compiles the .tex files it generates a lot of new files, to keep ever
 
 ```
 
-**src/** this directory will only contain source files that are used to generate the final document
-**build/** this is the output directory where all generated files will be placed, along the final .pdf of the document
-**assets/** it is also a good practise to keep assets as images in a separate directory since they are not code
-**main.tex** this is the main part of the document where we include all other parts, it is also the entry point of the compilation
-**preamble.tex** it is considered a good practise to keep anything that is not related to the content of the document here, use it to import packages and add all kinds of dependencies or rules
+- **src/** this directory will only contain source files that are used to generate the final document
+- **build/** this is the output directory where all generated files will be placed, along the final .pdf of the document
+- **assets/** it is also a good practise to keep assets as images in a separate directory since they are not code
+- **main.tex** this is the main part of the document where we include all other parts, it is also the entry point of the compilation
+- **preamble.tex** it is considered a good practise to keep anything that is not related to the content of the document here, use it to import packages and add all kinds of dependencies or rules
