@@ -1,0 +1,20 @@
+\usepackage{float}
+
+% Need to define the build/ dir as the output dir of the package
+\usepackage[outputdir=build]{minted}
+\usemintedstyle{tango}
+
+% To use greek
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainfont[]{DejaVu Serif}
+
+% Package for captions
+% Set spacing between caption and figure or table
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\captionsetup[figure]{skip=15pt}
+
+\renewcommand\listoflistingscaption{List of source codes}
+\renewcommand{\listfigurename}{List of plots}
+\renewcommand{\listtablename}{Tables}
