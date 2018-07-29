@@ -50,7 +50,7 @@ When latex compiles the .tex files it generates a lot of new files, to keep ever
         ...
     preamble.tex
     main.tex
-
+    references.bib
 ```
 
 - **src/** this directory will only contain source files that are used to generate the final document
@@ -59,3 +59,4 @@ When latex compiles the .tex files it generates a lot of new files, to keep ever
 - **src/titles/** this directory will only contain different title pages templates to choose from
 - **main.tex** this is the main part of the document where we include all other parts, it is also the entry point of the compilation
 - **preamble.tex** it is considered a good practise to keep anything that is not related to the content of the document here, use it to import packages and add all kinds of dependencies or rules
+- **references.bib** it contains a list with all the possible references we can cite inside the document
