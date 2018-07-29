@@ -21,18 +21,20 @@ To add Microsoft fonts:
 sudo apt-get install msttcorefonts
 ```
 
-## Compiling Documents
+## Usage
 
-To compile with xelatex run the command below in the CLI, or run `./runner.sh xelatex`
+To compile the template use the `runner.sh` script:
+
+You will need to give it permissions first:
 
 ```bash
-xelatex -synctex=1 -shell-escape -output-directory=build/ -interaction=nonstopmode src/main.tex
+chmod 755 runner.sh
 ```
 
-To compile with pdflatex run the command below in the CLI, or run `./runner.sh pdflatex`
+And the execute it with `xelatex` as the argument
 
 ```bash
-pdflatex -synctex=1 -shell-escape -output-directory=build/ -interaction=nonstopmode src/main.tex
+./runner.sh xelatex
 ```
 
 ## Project Structure
