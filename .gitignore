@@ -244,3 +244,6 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+
+# ignore created file
+*.pdf
