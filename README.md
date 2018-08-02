@@ -23,42 +23,42 @@ sudo apt-get install msttcorefonts
 
 ## Usage
 
-To compile the template use the `runner.sh` script:
-
-You will need to give it permissions first:
+To compile the template use run:
 
 ```bash
-chmod 755 runner.sh
+make all
 ```
 
-And the execute it with `xelatex` as the argument
+When latex compiles the .tex files it generates a lot of new files, to clean up after you finish compiling run:
 
 ```bash
-./runner.sh xelatex
+make clean
 ```
 
 ## Project Structure
 
-When latex compiles the .tex files it generates a lot of new files, to keep everything nice and tidy we follow this structure:
+Below we explain the project structure
 
 ```txt
 \assets
     \images
     \figures
-\build
-\src
-    \titles
-        title_1.tex
-        ...
-    preamble.tex
-    main.tex
-    references.bib
+\titles
+    title_1.tex
+    ...
+\sections
+    section_1.tex
+    section_2.tex
+    ...
+preamble.tex
+main.tex
+references.bib
+
 ```
 
-- **src/** this directory will only contain source files that are used to generate the final document
-- **build/** this is the output directory where all generated files will be placed, along the final .pdf of the document
-- **assets/** it is also a good practise to keep assets as images in a separate directory since they are not code
-- **src/titles/** this directory will only contain different title pages templates to choose from
+- **assets/** it is good practise to keep assets as images in a separate directory since they are not code
+- **titles/** this directory will only contain different title pages templates to choose from
+- **sections/** it is good practise to keep each section on its own file for better organization
 - **main.tex** this is the main part of the document where we include all other parts, it is also the entry point of the compilation
 - **preamble.tex** it is considered a good practise to keep anything that is not related to the content of the document here, use it to import packages and add all kinds of dependencies or rules
 - **references.bib** it contains a list with all the possible references we can cite inside the document

@@ -1,0 +1,22 @@
+\documentclass[a4paper]{article}
+
+\include{preamble}
+
+\begin{document}
+    \include{titles/title_1}
+    \tableofcontents
+    \listoffigures
+    \listoflistings
+    \listoftables
+    \newpage
+    
+    \include{sections/section_1}
+    \include{sections/section_2}
+    \include{sections/section_3}
+
+    \medskip
+
+    % We need the heading to add it to the table of contents
+    \printbibliography[heading=bibintoc]
+
+\end{document}
