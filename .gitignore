@@ -247,3 +247,4 @@ TSWLatexianTemp*
 
 # ignore created file
 *.pdf
+.vscode
