@@ -1,7 +1,17 @@
 % for greek language
 \usepackage{xltxtra} 
-\usepackage{xgreek} 
-\setmainfont[Mapping=tex-text]{GFS Didot} 
+\usepackage{xgreek}
+
+% font choice, choose something that supports both greek and english
+\usepackage{fontspec}
+    \setmainfont{minionpro}[
+        Path = fonts/,
+        Extension = .otf,
+        UprightFont = *-regular,
+        ItalicFont = *-it,
+        BoldFont = *-semibold,
+        BoldItalicFont = *-semiboldit
+    ]
 
 % need this package to add figures
 \usepackage{graphicx}
