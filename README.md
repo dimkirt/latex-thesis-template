@@ -15,6 +15,15 @@ sudo apt-get install texlive-full
 sudo apt-get install texlive-latex-extra
 ```
 
+The package `minted` for syntax highlighting is included in the `texlive-latex-extra` package after installing the extras package you need to also install
+`python-pygments`
+
+```bash
+sudo apt-get install python-pygments
+```
+
+**Note:** You need to use the flag `-shell-escape` while you make the .tex code
+
 To add Microsoft fonts:
 
 ```bash
