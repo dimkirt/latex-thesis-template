@@ -71,3 +71,68 @@ references.bib
 - **main.tex** this is the main part of the document where we include all other parts, it is also the entry point of the compilation
 - **preamble.tex** it is considered a good practise to keep anything that is not related to the content of the document here, use it to import packages and add all kinds of dependencies or rules
 - **references.bib** it contains a list with all the possible references we can cite inside the document
+
+## Fonts
+
+Good for Greek and English:
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{Times New Roman}
+```
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{Georgia}
+```
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{FreeSerif}
+```
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{DejaVu Serif}
+```
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{Linux Libertine O}
+```
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{MinionPro}
+```
+
+Very good only for Greek:
+
+```latex
+\usepackage{fontspec}
+    \setmainfont[Mapping=tex-text]{GFS Didot} 
+```
+
+To add custom .otf fonts:
+
+```latex
+\usepackage{fontspec}
+    \setmainfont{minionpro}[
+        Path = fonts/,
+        Extension = .otf,
+        UprightFont = *-regular,
+        ItalicFont = *-it,
+        BoldFont = *-semibold,
+        BoldItalicFont = *-semiboldit
+    ]
+```
+
+This supposes you have a font folder in the project directory:
+
+```txt
+\fonts
+    minionpro-it.otf
+    minionpro-regular.otf
+    minionpro-semibold.otf
+    minionpro-semiboldit.otf
+```
