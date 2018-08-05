@@ -23,6 +23,22 @@
 \renewcommand\listingscaption{Code Snippet}
 \renewcommand\listoflistingscaption{List of Code Snippets}
 
+% Package to create nice headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% add horizontal line on header
+\fancyhf{}
+
+% name of the chapter on the left of the header
+\lhead{\leftmark}
+
+% name of the section on the right of the header
+\rhead{\rightmark}
+
+% add the page number at the right of the footer
+\rfoot{\thepage}
+ 
 % Add hyperlinks in toc to sections and inside text where you cite a reference
 % or you refer to a table, listing or figure
 \usepackage[hidelinks]{hyperref}
