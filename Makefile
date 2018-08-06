@@ -12,4 +12,4 @@ clean:
 	rm main.lol main.bbl main.run.xml
 	rm main.synctex.gz
 	rm -rf _minted-main
-	rm chapters/*.aux titles/*.aux *.aux
+	rm chapters/*.aux titles/*.aux *.aux frontmatter/*.aux
