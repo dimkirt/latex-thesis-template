@@ -46,3 +46,8 @@
 % for the bibliography
 \usepackage[language=english, backend=biber]{biblatex}
 \addbibresource{references.bib}
+
+% add acknowledgements environment in the same style as abstract
+\newenvironment{acknowledgments}
+{\renewcommand{\abstractname}{Acknowledgments}\abstract}
+{\endabstract}
